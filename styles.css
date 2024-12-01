@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    background-image: url('image/gym-background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    min-height: 100vh; 
+    height: auto; 
+    background-attachment: fixed;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.74); 
+    pointer-events: none;
+}
+
+
+  
+ h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffff;
+    text-decoration: underline;
+}
+
+h4{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    text-align: center;
+    margin: 3% auto; 
+    background-color: #303546a2;
+    opacity: 120;
+    width: 26rem;
+    padding: 20px 0;
+    border-radius: 15px;
+    min-height: 20rem;
+    height: auto; 
+    position: relative; 
+    z-index: 2; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+input {
+    margin-top: 20px; 
+    padding-left: 10px;
+    height: 38px;
+    width: 65%; 
+    border-radius: 5px;
+    border: 1px solid gray;
+    overflow-y: auto;
+}
+
+
+
+button{
+    margin-left: 10px;
+    width: 20%;
+    height: 2.2rem;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #00608d;
+    color: white;
+}
+
+button:hover{
+    background-color: #02405e;
+    border : 1px;
+    cursor: pointer;
+}
+
+.task-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20px;
+    padding: 14px;
+    background-color: #e7e7e7;
+    width: 24rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+#errorMessage {
+    width: fit-content;
+    margin-left: 120px;
+    font-size: 15px;
+    color: #c00909ec;
+    background-color: black;
+    margin-top: 10px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delete-btn {
+    background-color: #ff2929;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #ac0202;
+    border: 1px solid #ac0202;
+}
+
+
